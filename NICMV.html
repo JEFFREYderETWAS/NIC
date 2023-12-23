@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            transition: 509ms;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        .section-1{
+            height: 1000px;
+            width: 100%;
+            background-color: rgb(40, 170, 83);
+            position:relative;
+            top: -00px;
+        }
+        .nav{
+            display:flex ;
+            line-height: 100px;
+            justify-content: space-between;   
+        }
+        .Header{
+            font-weight: 700;
+            color: white;
+            line-height: 90px;
+            font-size: 40px;
+            line-height: 150px;
+            margin-left: 10px;
+        }
+        .Header3{
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            line-height: 90px;
+            font-size: 45px;
+            line-height: 150px;
+            margin-left: 40px;
+        }
+        .link-pos{
+            display: flex;
+            margin-right: 10px;
+        }
+        .breite{
+            width: 100px;
+            height: 10px;
+            background-color: aliceblue;
+        }
+        .link-pos a{
+            font-weight: 600;
+            color: white;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        .Header a{
+            color: white;
+        }
+        .Header2{
+            display: none;
+        }
+        .menu{transition: 600ms;
+            display: none;
+            height: 90px;
+            width: 60px;
+        }
+        .bar{transition: 600ms;
+            height: 10px;
+            width: 100%;
+            background-color: aliceblue;
+            margin: 10px;
+        }
+        .button-box{
+            width: 100%;
+            height: 200px;
+            
+            position: relative;
+            top: 250px;
+            display: flex;
+            justify-content: center;
+        }
+        .button-text{
+            font-size: 40px;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+        }
+        #Executive{
+            text-align: center;
+            color:rgb(52, 160, 88) ;
+        }
+        .Executive-Members-h{
+            height: 1650px;
+        }
+        .box-p img{
+            height: 250px;
+            width: 200px;
+           
+            
+        }
+        .box-n img{
+            height: 180px;
+            width: 180px;
+            
+            
+        }
+        #text-n-2{
+            
+            position: relative;
+            right: 15px;
+        }
+        .box-p-text{
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 650;
+            color: rgb(16, 164, 16);
+        }
+        .box-p-text-2{
+            display: block;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 200;
+            position: relative;
+            top: 10px;
+            color: rgb(17, 170, 17);
+        }
+        .box-n-text{
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 200;
+            color: rgb(16, 164, 16);
+        }
+        .box-n-text-2{
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 450;
+            position: relative;
+            top: 10px;
+            color: rgb(17, 170, 17);
+        }
+        .box-p img{
+            width: 250px;
+        }
+        .Executive-Members-box{
+              
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content:center;
+        }
+        .Executiv-Members-President{
+            /*background-color:blue;*/
+            display: flex;
+            justify-content: space-between;
+            top: 10px;
+            position: absolute;
+            width: 800px;
+            height: 200px;
+        }
+        .Executiv-Members-Secretary{
+           /* background-color:violet;*/
+            display: flex;
+            justify-content: center;
+            top: 250px;
+            position: absolute;
+            width: 800px;
+            height: 200px;
+        }
+        .Executiv-Members-Secretary-F{
+            /* background-color:violet;*/
+             display: flex;
+             justify-content: center;
+             top: 550px;
+             position: absolute;
+             width: 800px;
+             height: 200px;
+         }
+        .Executiv-Members-Secretary-2{
+            /*background-color:violet;*/
+             display: flex;
+             justify-content: space-between;
+             top: 400px;
+             position: absolute;
+             width: 800px;
+             height: 200px;
+         }
+         .Executiv-Members-a{
+            /*background-color:violet;*/
+             display: flex;
+             justify-content: space-between;
+             top: 800px;
+             position: absolute;
+             width: 800px;
+             height: 200px;
+         }
+         .Executiv-Members-b{
+            /*background-color:violet;*/
+             display: flex;
+             justify-content: space-between;
+             top: 1100px;
+             position: absolute;
+             width: 800px;
+             height: 200px;
+         }
+        .button-start button{
+            width: 220px;
+            height: 70px;
+            background-color: none;
+            display: flex;
+            justify-content: center;
+            line-height: 70px;
+            position: absolute;
+            top: 100px;
+            border-radius: 50px;
+            border: solid white 5px;
+        }
+        .font-button-start{
+            color:rgb(255, 255, 255) ;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        .button-start a{
+            color:rgb(255, 255, 255) ;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        .section-2{
+            height: 900px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        .all-text{
+           
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .text{ 
+            height: 100%;
+            width: 90%;
+            color:  rgb(40, 170, 83);
+            font-size: 30px;
+        
+            font-weight: 100;
+        }
+        .header-sec-2{
+          
+            color :rgb(40, 170, 83)  ;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size :45px ;
+           
+        }
+        
+        .contact-box{
+            width: 45%;
+            height: 600px;
+            background-color: white;
+            position:relative ;
+            border-radius: 15px;
+        }
+        .contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            margin: 10px;
+            border: 2px solid rgb(231, 231, 231);
+            background-color: rgb(231, 231, 231);
+            border-radius: 5px;
+            outline: none;
+        }
+        input:hover{
+            border: 2px solid rgb(40, 170, 83) ;;
+        }
+        input:focus{
+            border: 2px solid rgb(25, 132, 61) ;;
+        }
+        textarea{
+            width: 300px;
+            height: 150px;
+            border: 2px solid rgb(231, 231, 231);
+            background-color: rgb(231, 231, 231);
+            border-radius: 5px;
+            outline: none;
+        }
+        textarea:hover{
+            border: 2px solid rgb(40, 170, 83) ;;
+        }
+        textarea:focus{
+            border: 2px solid rgb(25, 132, 61) ;;
+        }
+        .contact-box-pos{
+            width: 100%;
+            height: 100px;
+        
+            display: flex;
+            justify-content: center;
+        }
+        
+        .Header4{
+            display: block;
+            font-weight: 700;
+            line-height: 90px;
+            font-size: 50px;
+            line-height: 150px;
+            margin-left: 10px;
+            color: white;
+        }
+        #button{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(40, 170, 83) ;;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #button:hover{
+            background-color: rgb(70, 157, 99);
+        }
+        .Header-contact{
+            position: absolute;
+            top: 00px;
+            margin-top: 50px;
+            left: 50px;
+            font-weight: 700;
+            font-size: 35px;
+            
+        }
+        /*.button-text-1{
+            font-size: 50px;
+        }*/
+        
+        @media (max-width: 1100px){
+            .all-text{
+           
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .text{ 
+                height: 100%;
+                width: 90%;
+                color:  rgb(40, 170, 83);
+                font-size: 25px;
+            
+                font-weight: 100;
+            }
+            .header-sec-2{
+              
+                color :rgb(40, 170, 83)  ;
+                margin-top: 20px;
+                font-weight: 700;
+                font-size :35px ;
+               
+            }
+            .section-2{
+                height: 800px;
+            }
+        }
+        @media (max-width: 790px){
+            .all-text{
+           
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .text{ 
+                height: 100%;
+                width: 90%;
+                color:  rgb(40, 170, 83);
+                font-size: 20px;
+            
+                font-weight: 100;
+            }
+            .header-sec-2{
+              
+                color :rgb(40, 170, 83)  ;
+                margin-top: 20px;
+                font-weight: 700;
+                font-size :30px ;
+               
+            }
+        }
+        @media (max-width: 500px){
+            .all-text{
+           
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .text{ 
+                height: 100%;
+                width: 90%;
+                color:  rgb(40, 170, 83);
+                font-size: 15px;
+            
+                font-weight: 100;
+            }
+            .header-sec-2{
+              
+                color :rgb(40, 170, 83)  ;
+                margin-top: 20px;
+                font-weight: 700;
+                font-size :25px ;
+               
+            }
+        }
+        @media (max-width: 1217px){
+            .link-pos a{
+                font-weight: 600;
+                color: white;
+                font-size: 25px;
+                margin-left: 50px;
+            }
+            .Header{
+                font-weight: 700;
+                color: white;
+                line-height: 90px;
+                font-size: 40px;
+                line-height: 150px;
+                margin-left: 10px;
+            }
+        }
+        @media (max-width: 1126px){
+            .link-pos a{
+                font-weight: 600;
+                color: white;
+                font-size: 20px;
+                margin-left: 50px;
+            }
+            .Header{
+                font-weight: 700;
+                color: white;
+                line-height: 90px;
+                font-size: 40px;
+                line-height: 150px;
+                margin-left: 10px;
+            }
+        }
+        
+        @media (max-width: 960px) {
+        
+            .box-p-text{
+                display: block;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 650;
+                color: rgb(16, 164, 16);
+            }
+            .box-p-text-2{
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 200;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .box-n-text{
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 200;
+                color: rgb(16, 164, 16);
+            }
+            .box-n-text-2{
+                display: block;
+                text-align: center;
+                font-size: 11px;
+                font-weight: 450;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+        
+            .box-p img{
+                height: 200px;
+                width:200px;
+               
+                
+            }
+            .box-n img{
+                height: 160px;
+                width: 160px;
+                
+                
+            }
+            .Executive-Members-box{
+              
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content:center;
+            }
+            .Executiv-Members-President{
+                /*background-color:blue;*/
+                display: flex;
+                justify-content: space-between;
+                top: 10px;
+                position: absolute;
+                width: 800px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary{
+               /* background-color:violet;*/
+                display: flex;
+                justify-content: center;
+                top: 250px;
+                position: absolute;
+                width: 800px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary-F{
+                /* background-color:violet;*/
+                 display: flex;
+                 justify-content: center;
+                 top: 550px;
+                 position: absolute;
+                 width: 800px;
+                 height: 200px;
+             }
+            .Executiv-Members-Secretary-2{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 400px;
+                 position: absolute;
+                 width: 800px;
+                 height: 200px;
+             }
+             .Executiv-Members-a{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 800px;
+                 position: absolute;
+                 width: 800px;
+                 height: 200px;
+             }
+             .Executiv-Members-b{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 1100px;
+                 position: absolute;
+                 width: 800px;
+                 height: 200px;
+             }
+               
+             .Header-contact{
+                position: absolute;
+                top: 00px;
+                margin-top: 50px;
+                left: 30px;
+                font-weight: 700;
+                
+            }
+            .menu{
+                transition: 900ms;
+                display:block;
+            }
+            .Header2{
+                display: block;
+                font-weight: 700;
+                color :rgb(40, 170, 83)  ;
+                line-height: 90px;
+                font-size: 50px;
+                line-height: 150px;
+                margin-left: 10px;
+            }
+            .contact-box{
+                width: 45%;
+                height: 600px;
+                background-color: white;
+            }
+            .contact-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .Header4{
+                display: block;
+                font-weight: 700;
+                line-height: 90px;
+                font-size: 50px;
+                line-height: 150px;
+                margin-left: 10px;
+            }
+            .menu.active .bar:nth-child(1){
+                transform: translateY(20px) rotate(-45deg);
+                background-color :rgb(40, 170, 83)  ;
+            }
+            .menu.active .bar:nth-child(2){
+                transform: translateY(0px) rotate(-45deg);
+                background-color :rgb(40, 170, 83)  ;
+            }
+            .menu.active .bar:nth-child(3){
+                transform: translateY(-20px) rotate(45deg);
+                background-color :rgb(40, 170, 83)  ;
+            }
+            .Header3{
+                font-size: 50px;
+            }
+            .Header4{
+                font-size: 50px;
+               color: white;
+            }
+            .Header{
+                font-size: 50px;
+            }
+            .nav{
+                transition: 900ms;
+                position: relative;
+               }
+            
+            .menu{
+                position: relative;
+                left: -50px;
+                top: 30px;
+            }
+          
+            .link-nav{
+                display: flex;
+            }
+            .link-pos{
+            
+            display:block;
+            position: absolute;
+            top: 0px;
+            left: -0%;
+            width: 100%;
+            height: 600px;
+            background-color: rgb(233, 233, 233);
+            opacity: 0;
+            transition: 500ms;
+            top: -600px;
+           
+              
+            }
+            .link-pos.active{
+                transition: 500ms;
+                opacity: 1;
+                display: block;
+                top: 10px;
+            }
+            .link-pos a{
+                color :rgb(40, 170, 83)  ;
+                position: relative;
+                top: 50px;
+            }
+        
+            .link-nav2 a{
+                display:block;
+                margin: 0;
+                padding: 0;
+            }
+           
+            .button-box.active{
+                display: none;
+            }
+        
+           
+            .menu.active .bar:nth-child(1){
+                transform: translateY(20px) rotate(-45deg);
+                
+            }
+            .menu.active .bar:nth-child(2){
+                transform: translateY(0px) rotate(-45deg);
+            
+            }
+            .menu.active .bar:nth-child(3){
+                transform: translateY(-20px) rotate(45deg);
+               
+            }
+            .Header3{
+                font-size: 25px;
+                margin-left: 10px;
+            }
+            .Header4{
+                font-size: 50px;
+               color: white;
+            }
+            .Header{
+                font-size: 40px;
+            }
+            .nav{
+                transition: 900ms;
+                position: relative;
+               }
+          
+            .menu{
+                position: relative;
+                left: -50px;
+                top: 30px;
+            }
+        
+        
+            .link-nav2 a{
+                display:block;
+                margin: 0;
+                padding: 0;
+            }
+           
+          
+            .button-box.active{
+                display: none;
+            }
+          
+            .link-pos.active{
+                transition: 500ms;
+                opacity: 1;
+                display: block;
+                top: 0px;
+            }
+            .link-pos a{
+                color :rgb(40, 170, 83)  ;
+                position: relative;
+                top: 50px;
+            }
+        
+        
+            .link-nav2 a{
+                display:block;
+                margin: 0;
+                padding: 0;
+            }
+           
+        
+            .button-box.active{
+                display: none;
+            }
+           
+        }
+        @media (max-width:800px) {
+            .box-p img{
+                height: 180px;
+                width:180px;
+             
+                
+            }
+            .box-n img{
+                height: 140px;
+                width: 140px;
+               
+                
+            }
+        
+            .box-p-text{
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 650;
+                color: rgb(16, 164, 16);
+            }
+            .box-p-text-2{
+                display: block;
+                text-align: center;
+                font-size: 13px;
+                font-weight: 200;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .box-n-text{
+                display: block;
+                text-align: center;
+                font-size: 9px;
+                font-weight: 200;
+                color: rgb(16, 164, 16);
+            }
+            .box-n-text-2{
+                display: block;
+                text-align: center;
+                font-size: 8px;
+                font-weight: 450;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .Executive-Members-box{
+              
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content:center;
+            }
+            .Executiv-Members-President{
+                /*background-color:blue;*/
+                display: flex;
+                justify-content: space-between;
+                top: 10px;
+                position: absolute;
+                width: 600px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary{
+               /* background-color:violet;*/
+                display: flex;
+                justify-content: center;
+                top: 250px;
+                position: absolute;
+                width: 600px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary-F{
+                /* background-color:violet;*/
+                 display: flex;
+                 justify-content: center;
+                 top: 550px;
+                 position: absolute;
+                 width: 600px;
+                 height: 200px;
+             }
+            .Executiv-Members-Secretary-2{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 400px;
+                 position: absolute;
+                 width: 600px;
+                 height: 200px;
+             }
+             .Executiv-Members-a{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 800px;
+                 position: absolute;
+                 width: 600px;
+                 height: 200px;
+             }
+             .Executiv-Members-b{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 1100px;
+                 position: absolute;
+                 width: 600px;
+                 height: 200px;
+             }
+            
+        }
+        @media (max-width:650px) {
+            .Executive-Members-h{
+                height: 1350px;
+            }
+            .box-p-text{
+                display: block;
+                text-align: center;
+                font-size: 11px;
+                font-weight: 650;
+                color: rgb(16, 164, 16);
+            }
+            .box-p-text-2{
+                display: block;
+                text-align: center;
+                font-size: 10px;
+                font-weight: 200;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .box-n-text{
+                display: block;
+                text-align: center;
+                font-size: 7px;
+                font-weight: 200;
+                color: rgb(16, 164, 16);
+            }
+            .box-n-text-2{
+                display: block;
+                text-align: center;
+                font-size: 6px;
+                font-weight: 450;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .box-p img{
+                height: 140px;
+                width:140px;
+           
+                
+            }
+            .box-n img{
+                height: 100px;
+                width: 100px;
+                
+                
+            }
+            .Executive-Members-box{
+                width: 100%;
+                height: 40%;
+                position: relative;
+                display: flex;
+                justify-content:center;
+            }
+            .Executiv-Members-President{
+                /*background-color:blue;*/
+                display: flex;
+                justify-content: space-between;
+                top: 10px;
+                position: absolute;
+                width: 400px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary{
+               /* background-color:violet;*/
+                display: flex;
+                justify-content: center;
+                top: 250px;
+                position: absolute;
+                width: 400px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary-F{
+                /* background-color:violet;*/
+                 display: flex;
+                 justify-content: center;
+                 top: 500px;
+                 position: absolute;
+                 width: 400px;
+                 height: 200px;
+             }
+            .Executiv-Members-Secretary-2{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 350px;
+                 position: absolute;
+                 width: 400px;
+                 height: 200px;
+             }
+             .Executiv-Members-a{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 700px;
+                 position: absolute;
+                 width: 400px;
+                 height: 200px;
+             }
+             .Executiv-Members-b{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 900px;
+                 position: absolute;
+                 width: 400px;
+                 height: 200px;
+             }
+             .Header{
+                font-size: 30px;
+             }
+        }
+        @media (max-width:450px){
+            .Header{
+                font-size: 25px;
+            }
+        }
+        @media (max-width:410px) {
+            .Executive-Members-h{
+                height: 950px;
+            }
+            .box-n-text{
+                display: block;
+                text-align: center;
+                font-size: 5px;
+                font-weight: 200;
+                color: rgb(16, 164, 16);
+            }
+            .box-n-text-2{
+                display: block;
+                text-align: center;
+                font-size: 4px;
+                font-weight: 450;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .box-p-text{
+                display: block;
+                text-align: center;
+                font-size: 7px;
+                font-weight: 650;
+                color: rgb(16, 164, 16);
+            }
+            .box-p-text-2{
+                display: block;
+                text-align: center;
+                font-size: 6px;
+                font-weight: 200;
+                position: relative;
+                top: 10px;
+                color: rgb(17, 170, 17);
+            }
+            .box-p img{
+                height: 100px;
+                width:100px;
+                
+                
+            }
+            .box-n img{
+                height: 60px;
+                width: 60px;
+             
+                
+            }
+            .Executive-Members-box{
+        
+                width: 100%;
+                height: 80%;
+                position: relative;
+                display: flex;
+                justify-content:center;
+            }
+            .Executiv-Members-President{
+                /*background-color:blue;*/
+                display: flex;
+                justify-content: space-between;
+                top: 10px;
+                position: absolute;
+                width: 250px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary{
+               /* background-color:violet;*/
+                display: flex;
+                justify-content: center;
+                top: 150px;
+                position: absolute;
+                width: 250px;
+                height: 200px;
+            }
+            .Executiv-Members-Secretary-F{
+                /* background-color:violet;*/
+                 display: flex;
+                 justify-content: center;
+                 top: 300px;
+                 position: absolute;
+                 width: 300px;
+                 height: 200px;
+             }
+            .Executiv-Members-Secretary-2{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 220px;
+                 position: absolute;
+                 width: 250px;
+                 height: 200px;
+             }
+             .Executiv-Members-a{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 450px;
+                 position: absolute;
+                 width: 250px;
+                 height: 200px;
+             }
+             .Executiv-Members-b{
+                /*background-color:violet;*/
+                 display: flex;
+                 justify-content: space-between;
+                 top: 600px;
+                 position: absolute;
+                 width: 250px;
+                 height: 200px;
+             }
+             #contact{
+               margin-top: 100px;
+             }
+             .Header{
+                font-size: 23px;
+            }
+            .menu{transition: 600ms;
+                height: 60px;
+                width: 50px;
+                top: 40px;
+                left:-20px;
+            }
+            .bar{transition: 600ms;
+                height: 10px;
+                width: 100%;
+                background-color: aliceblue;
+                margin: 8px;
+            }
+        
+            .menu.active .bar:nth-child(1){
+                transform: translateY(18px) rotate(-45deg);
+                
+            }
+            .menu.active .bar:nth-child(2){
+                transform: translateY(0px) rotate(-50deg);
+            
+            }
+            .menu.active .bar:nth-child(3){
+                transform: translateY(-18px) rotate(45deg);
+               
+            }
+        }
+        
+        @media (max-width:535px) {
+            
+            .button-start{
+               top: 150px;
+            }
+            .button-text{
+                font-size: 28px;
+                color: white;
+                font-weight: 600;
+                text-align: center;
+            }
+         
+        }
+        @media (max-width:360px) {
+            .Header{
+                font-size: 18px;
+            }
+            .button-start{
+               top: 150px;
+            }
+            .button-text{
+                font-size: 23px;
+                color: white;
+                font-weight: 600;
+                text-align: center;
+            }
+         
+        }
+        @media (max-width:300px) {
+            .Header{
+                font-size: 15px;
+            }
+            .button-start{
+               top: 150px;
+            }
+            .button-text{
+                font-size: 23px;
+                color: white;
+                font-weight: 600;
+                text-align: center;
+            }
+         
+        }
+        @media (max-width:1055px){
+            .link-pos a{
+               margin-left: 25px;
+        
+            }
+        }
+        
+        @media (max-width: 745px){
+            input{
+                width: 200px;
+                height: 30px;
+                margin: 10px;
+                border: 2px solid rgb(231, 231, 231);
+                background-color: rgb(231, 231, 231);
+                border-radius: 5px;
+                outline: none;
+            }
+         
+            textarea{
+                width: 200px;
+                height: 100px;
+                border: 2px solid rgb(231, 231, 231);
+                background-color: rgb(231, 231, 231);
+                border-radius: 5px;
+                outline: none;
+            }
+           
+            .contact-box{
+                width: 75%;
+                height: 500px;
+                background-color: white;
+                position:relative ;
+                border-radius: 15px;
+            }
+        }
+        @media (max-width:410px) {
+            input{
+                width: 150px;
+                height: 30px;
+                margin: 10px;
+                border: 2px solid rgb(231, 231, 231);
+                background-color: rgb(231, 231, 231);
+                border-radius: 5px;
+                outline: none;
+            }
+           
+            textarea{
+                width: 150px;
+                height: 100px;
+                border: 2px solid rgb(231, 231, 231);
+                background-color: rgb(231, 231, 231);
+                border-radius: 5px;
+                outline: none;
+            }
+        
+            .contact-box{
+                width: 80%;
+                height: 450px;
+                background-color: white;
+                position:relative ;
+                border-radius: 15px;
+            }
+            .Header-contact{
+                font-size: 25px;
+                top: -20px;
+            }
+            .Header3{
+                font-size: 25px;
+                margin-left: 10px;
+            }
+            .Header4{
+                font-size: 50px;
+               color: white;
+            }
+         
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="section-1">       
+        <div class="nav">
+            <div class="Header"><a href="">Ndi Igbo Cologne e.V.</a></div>
+            <ul class="link-nav"> 
+               <div class="link-pos">
+                <div class="Header2">Home</div>
+                <li><a href="NIC.html#section-2">About us</a></li>
+                <li><a href="web-3-Imprint.html">imprint</a></li>
+                <li><a href="web-3-Polichy.html">Privacy Policy</a></li>
+                <li><a href="NIC.html #contact">Contact</a></li>
+               </div>            
+            </ul>
+            <div class="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>           
+    </div>
+    <div class="button-box">
+        <div class="button-text">
+            <span class="button-text-1">A brief introduction of</span>  <br> 
+            Ndi Igbo Cologne e.V.
+        </div>
+        <a class="button-start" href=""></a>
+    </div>
+    </div>
+    <div id="section-2" class="section-2">
+        <div class="all-text">
+            <div class="text">
+              <div class="header-sec-2">About us</div>
+              <br><br>
+              ​The history of the name Ndi Igbo Cologne e.V. is born out of a series of structural difficult advancement of first, being known as 'Obi Nwanne Cologne e.V. structured to Igbo Union Cologne e.V. and Nzuko Ndi Igbo Cologne e.V. respectively, before this latest advancement to Ndi Igbo Cologne e.V. <br><br>​The founders of this name that keeps on evolving are the Igbos residing in the metropltan city of Cologne and its environs in NRW Germany. They are oringinally people from the South Eastern part of Nigeria comprising Abia, Anambara, Ebonyi, Enugu and Imo State as well as parts of the Delta, Akwa Ibom and Rivers states, united by a common Language with different dialects. <br><br> ​Importantly, some of the major aims and objectives of the Ndi Igbo Cologne e.v. are to protect and promote the Igbo indigenous rich Arts, Culture and Tradition in an objective manner, both in Igbo land as well to properly integrate ourselves in the culture and life of our immediate environment – Cologne and Germany at large. <br><br>﻿​﻿​In the light if this aims, we resolved to organise this all important Igbo tradition – New Yam Festival (Iwa Ji), which is an annual event to offer thanks to the God of Yam (Ufiejioku) for the gift of Yam and the successful planting season, while we also pray for a high yield harvesting season.
+            </div>
+        </div>
+    </div>
+    <div class="Executive-Members-h" class="section-2">
+        <div id="Executive" class="Header3">Executive Members 2022</div>
+        <div class="Executive-Members-box">
+            <div class="Executiv-Members-President">
+                <div class="box-p"><img src="WhatsApp Image 2022-07-23 at 9 (1).png" alt=""><span class="box-p-text">Bro. Austine Chinedu Nwabuikwu</span><span class="box-p-text-2">President</span></div>
+                <div class="box-p"><img src="WhatsApp Image 2022-07-25 at 10.png" alt=""><span class="box-p-text">Mazi Elochukwu Obi</span><span class="box-p-text-2">Vice President</span></div>
+            </div>
+
+            <div class="Executiv-Members-Secretary">
+                <div class="box-n"><img src="WhatsApp Image 2022-07-23 at 14 (1).png" alt=""><span class="box-n-text">Engr. Cyprian Agbo</span><span class="box-n-text-2">Secretary</span></div>
+                
+            </div>
+
+            <div class="Executiv-Members-Secretary-2">
+                <div class="box-n"><img src="asst.-secretary-chukwuemeka-ujukwu-mba-192.jpg" alt=""><span id="text-n-2" class="box-n-text">  Mazi Chukwuemeka Ojukwu-Mba</span><span id="text-n-2" class="box-n-text-2">Secretary</span></div>
+                <div class="box-n"><img src="asst-financial-sec.-emeka-anyaghara-193.jpg" alt=""><span class="box-n-text">Mazi Emeka Anyaghara</span><span class="box-n-text-2">Asst. Financial Secretary</span></div>
+            </div>
+            <div class="Executiv-Members-Secretary-F">
+                <div class="box-n"><img src="chief-norman-ukoh-secretary-193.jpg" alt=""><span class="box-n-text">Chief Norman Ukoh</span><span class="box-n-text-2"> Financial Secretary</span></div>
+                
+            </div>
+            <div class="Executiv-Members-a">
+                <div class="box-n"><img src="treasurer-mike-ajuzie-154.jpg" alt=""><span class="box-n-text">Mazi Michael Ajuzie</span><span class="box-n-text-2">Treasurer</span></div>
+                <div class="box-n"><img src="provost-chidi-mbagwu-154.jpg" alt=""><span class="box-n-text">Mazi Chidi Mbagwu</span><span class="box-n-text-2">Provost</span></div>
+                <div class="box-n"><img src="asst.-provost-emmanuel-chidi-china--154.jpg" alt=""><span class="box-n-text">Mazi Emmanuel Chidi (China)</span><span class="box-n-text-2">Asst. Provost</span></div>
+            </div>
+            <div class="Executiv-Members-b">
+                <div class="box-n"><img src="welfare-officer-pastor-simpson-hinneh-193.jpg" alt=""><span class="box-n-text">Pastor Simpson Hinneh</span><span class="box-n-text-2">Welfare Officer</span></div>
+                <div class="box-n"><img src="pro-friday-onuh-193.jpg" alt=""><span class="box-n-text">Mazi Desmond Onuh</span><span class="box-n-text-2">Public Relations Officer (PRO)</span></div>
+                <div class="box-n"><img src="asst.-pro-rowland-ogbuene-193.jpg" alt=""><span class="box-n-text">Mazi Obiora Ogbuene (BigRow)</span><span class="box-n-text-2">Asst. Public Relations Officer</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="Executive-Members-h" class="section-2">
+        <div id="Executive" class="Header3">Executive Members 2018-2022</div>
+        <div class="Executive-Members-box">
+            <div class="Executiv-Members-President">
+                <div class="box-p"><img src="president-austin-nwabuikwu-kopie-218.jpg" alt=""><span class="box-p-text">Bro. Austine Chinedu Nwabuikwu</span><span class="box-p-text-2">President</span></div>
+                <div class="box-p"><img src="vice-president-elochukwu-obi-217.jpg" alt=""><span class="box-p-text">Mazi Elochukwu Obi</span><span class="box-p-text-2">Vice President</span></div>
+            </div>
+
+            <div class="Executiv-Members-Secretary">
+                <div class="box-n"><img src="financial-secretary-mr.-cy-agbo-193.jpg" alt=""><span class="box-n-text">Engr. Cyprian Agbo</span><span class="box-n-text-2">Secretary</span></div>
+                
+            </div>
+
+            <div class="Executiv-Members-Secretary-2">
+                <div class="box-n"><img src="asst.-secretary-chukwuemeka-ujukwu-mba-192.jpg" alt=""><span id="text-n-2" class="box-n-text">  Mazi Chukwuemeka Ojukwu-Mba</span><span id="text-n-2" class="box-n-text-2">Secretary</span></div>
+                <div class="box-n"><img src="asst-financial-sec.-emeka-anyaghara-193.jpg" alt=""><span class="box-n-text">Mazi Emeka Anyaghara</span><span class="box-n-text-2">Asst. Financial Secretary</span></div>
+            </div>
+            <div class="Executiv-Members-Secretary-F">
+                <div class="box-n"><img src="chief-norman-ukoh-secretary-193.jpg" alt=""><span class="box-n-text">Chief Norman Ukoh</span><span class="box-n-text-2"> Financial Secretary</span></div>
+                
+            </div>
+            <div class="Executiv-Members-a">
+                <div class="box-n"><img src="treasurer-mike-ajuzie-154.jpg" alt=""><span class="box-n-text">Mazi Michael Ajuzie</span><span class="box-n-text-2">Treasurer</span></div>
+                <div class="box-n"><img src="provost-chidi-mbagwu-154.jpg" alt=""><span class="box-n-text">Mazi Chidi Mbagwu</span><span class="box-n-text-2">Provost</span></div>
+                <div class="box-n"><img src="asst.-provost-emmanuel-chidi-china--154.jpg" alt=""><span class="box-n-text">Mazi Emmanuel Chidi (China)</span><span class="box-n-text-2">Asst. Provost</span></div>
+            </div>
+            <div class="Executiv-Members-b">
+                <div class="box-n"><img src="welfare-officer-pastor-simpson-hinneh-193.jpg" alt=""><span class="box-n-text">Pastor Simpson Hinneh</span><span class="box-n-text-2">Welfare Officer</span></div>
+                <div class="box-n"><img src="pro-friday-onuh-193.jpg" alt=""><span class="box-n-text">Mazi Desmond Onuh</span><span class="box-n-text-2">Public Relations Officer (PRO)</span></div>
+                <div class="box-n"><img src="asst.-pro-rowland-ogbuene-193.jpg" alt=""><span class="box-n-text">Mazi Obiora Ogbuene (BigRow)</span><span class="box-n-text-2">Asst. Public Relations Officer</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="contact"  class="section-1">
+        <div class="Header4">Contact</div>
+     <div class="contact-box-pos">
+        <div class="contact-box">
+            <div class="Header-contact">Contact us</div><br>
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+                <input id="text" type="text" name="name" placeholder=" name" required><br>
+                <input id="text" type="email" name="email" placeholder=" email" required><br>
+                <input type="text" placeholder=" subject" required><br>
+                <textarea name="" id="message" placeholder=" Massage" cols="30" rows="10"></textarea><br>
+                <button id="button" type="submit">Send</button>
+           </form>
+           </div>
+     </div>
+    </div>
+    <script>
+        let menu = document.querySelector(".menu")
+        let nav = document.querySelector(".nav")
+        let bar = document.querySelector(".bar")
+        let linkpos = document.querySelector(".link-pos")
+        
+        let header = document.querySelector(".Header")
+        let buttonBox = document.querySelector(".button-box")
+        
+        menu.addEventListener("click", function () {
+            linkpos.classList.toggle("active");
+            bar.classList.toggle("active");
+           
+            menu.classList.toggle("active");
+            nav.classList.toggle("active");
+            header.classList.toggle("active");
+            buttonBox.classList.toggle("active");
+            
+        });
+    </script>
+</body>
+</html>
