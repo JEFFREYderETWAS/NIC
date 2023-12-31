@@ -1,0 +1,351 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+.section-1{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position:relative;
+    top: -00px;
+}
+::-webkit-scrollbar{
+    width: 17px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(76, 76, 76);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(169, 169, 169);
+}
+.nav{
+    display:flex ;
+    line-height: 100px;
+    justify-content: space-between;   
+}
+.Header a{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 90px;
+    font-size: 65px;
+    line-height: 150px;
+    margin-left: 40px;
+}
+.Header3{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 90px;
+    font-size: 45px;
+    line-height: 150px;
+    margin-left: 40px;
+}
+.link-pos{
+    display: flex;
+    margin-right: 50px;
+}
+.breite{
+    width: 100px;
+    height: 10px;
+    background-color: aliceblue;
+}
+.link-pos a{
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.Header2{
+    display: none;
+}
+.menu{transition: 600ms;
+    display: none;
+    height: 90px;
+    width: 60px;
+}
+.bar{transition: 600ms;
+    height: 10px;
+    width: 100%;
+    background-color: rgb(116, 117, 117);
+    margin: 10px;
+}     
+
+
+
+
+#logo{
+    margin-right: 20%;
+    line-height: 100px;
+    font-size: 50px;
+}
+.navbar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    border-bottom: solid rgb(212, 212, 212);
+    margin-bottom: 50px;
+}
+.all-text{
+  display: flex;
+  justify-content: center;
+}
+.text{
+    color: rgb(151, 160, 153);
+    text-align: left;
+    width: 698px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.überschrift-one{
+
+    font-size: 50px;
+    margin-bottom: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+#magazine{
+    height: 1500px;
+    width: 1500px;
+}
+.link-nav{
+    display: flex;
+    margin: 5px;
+    font-size: 25px;
+}
+.link-nav a{
+    line-height: 50px;
+    width: 90%;
+    margin: 15px;
+    color: rgb(37, 37, 37);
+}
+
+.link-nav a:hover{
+    transition: all 360ms;
+    color: rgb(170, 170, 170);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.list-num{
+    color: rgb(47, 47, 47);
+}
+.platz-top{
+    margin-top: 15px;
+}
+.Address{
+    color: rgb(130, 130, 130);
+}
+.Address-Web-name{
+    color: rgb(47, 47, 47);
+}
+@media (max-width: 1217px){
+    .link-pos a{
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    .Header{
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        line-height: 90px;
+        font-size: 40px;
+        line-height: 150px;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1145px){
+    .link-pos a{
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .Header{
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        line-height: 90px;
+        font-size: 40px;
+        line-height: 150px;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1110px){
+    .menu{
+        position: relative;
+        left: -50px;
+        top: 30px;
+    }
+ 
+
+.menu{
+    transition: 900ms;
+    display:block;
+}
+.Header2{
+    display: block;
+    font-weight: 700;
+    color:rgb(0, 0, 0) ;
+    line-height: 90px;
+    font-size: 50px;
+    line-height: 150px;
+    margin-left: 10px;
+}
+.contact-box{
+    width: 45%;
+    height: 600px;
+    background-color: white;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Header4{
+    display: block;
+    font-weight: 700;
+    line-height: 90px;
+    font-size: 50px;
+    line-height: 150px;
+    margin-left: 10px;
+}
+.menu.active .bar:nth-child(1){
+    transform: translateY(20px) rotate(-45deg);
+    background-color: rgb(116, 117, 117);
+}
+.menu.active .bar:nth-child(2){
+    transform: translateY(0px) rotate(-45deg);
+    background-color: rgb(116, 117, 117);
+}
+.menu.active .bar:nth-child(3){
+    transform: translateY(-20px) rotate(45deg);
+    background-color: rgb(116, 117, 117);
+}
+.link-pos{
+        
+    display:block;
+    position: absolute;
+    top: 0px;
+    left: -0%;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(233, 233, 233);
+    opacity: 0;
+    transition: 500ms;
+    top: -500px;
+   
+  
+}
+.link-pos.active{
+    transition: 500ms;
+    opacity: 1;
+    display: block;
+    top: 0px;
+}
+
+
+@media (max-width: 780px){
+    .text{
+        font-size: 10px;
+    }
+    .überschrift-one{
+
+        font-size: 40px;
+        margin-bottom: 35px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+}
+@media (max-width: 740px){
+    .text{
+        width: 500px;
+    }
+    .überschrift-one{
+
+        font-size: 40px;
+        margin-bottom: 35px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+}
+@media (max-width: 610px){
+    .Header{
+        font-size: 30px;
+    }
+}
+.menu{transition: 600ms;
+    height: 60px;
+    width: 50px;
+    top: 40px;
+    left:-20px;
+}
+.bar{transition: 600ms;
+    height: 10px;
+    width: 100%;
+    margin: 8px;
+}
+
+.menu.active .bar:nth-child(1){
+    transform: translateY(18px) rotate(-45deg);
+    
+}
+.menu.active .bar:nth-child(2){
+    transform: translateY(0px) rotate(-50deg);
+
+}
+.menu.active .bar:nth-child(3){
+    transform: translateY(-18px) rotate(45deg);
+   
+}
+
+@media (max-width: 520px){
+    .Header{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 10px;
+        width: 350px;
+    }
+    .überschrift-one{
+
+        font-size: 40px;
+        margin-bottom: 35px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+}
+@media (max-width: 420px){
+    #pp{
+        font-size: 40px;
+    }
+}
+@media (max-width: 330px){
+    #pp{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 390px){
+    .Header{
+        font-size: 5px;
+    }
+    .text{
+        font-size: 10px;
+        width: 220px;
+    }
+    .überschrift-one{
+
+        font-size: 20px;
+        margin-bottom: 35px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+}
+}
