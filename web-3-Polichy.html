@@ -369,6 +369,16 @@
   </div>
   </div>
 
-  <script src="Pollichy.js"></script>
+  <script>
+    let menu = document.querySelector(".menu")
+   let bar = document.querySelector(".bar")
+   let linkPos = document.querySelector(".link-pos")
+   menu.addEventListener("click", function(){
+    console.log("active")
+    bar.classList.toggle("active")
+    menu.classList.toggle("active")
+    linkPos.classList.toggle("active")
+})
+  </script> 
 </body>
 </html>
